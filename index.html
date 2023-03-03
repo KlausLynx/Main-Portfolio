@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+                <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+                <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+                <!-- JS -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="Me.jpg" alt="profile-pic" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="about.html#about" data-text="About">About</a></li>
+                <li><a href="about.html#skills" data-text="Skills">Skills</a></li>
+                <li><a href="about.html#projects" data-text="Projects">Projects</a></li>
+                <li><a href="about.html#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="about.html#contact" class="btn">Contact Me</a>
+        </header>
+
+        <div class="imgBx">
+            <figure>
+                <img src="IMG_20220823_101313_417.jpg" alt="profile" class="cover">
+            </figure>
+        </div>
+        <div class="content">
+            <h1>Hi, I am <br><span>Okechukwu Jide-Onyia</span></h1>
+            <p>A Frontend-Developer on a <strong>journey</strong> to acheive greatness!!!</p>
+            <a href="about.html#about" class="btn">If Curious</a>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="https://wa.me/qr/3BWJHO6AJTENB1"><img src="icons8-whatsapp-96.png" alt="Whatsapp link" class="socialIcons"></a></li>
+                <li><a href="mailto:onyiavitus@gmail.com"><img src="icons8-mail-96.png" alt="Email link" class="socialIcons"></a></li>
+                <li><a href="https://www.instagram.com/klaus_lynx/"><img src="icons8-instagram-96.png" alt="Instagram Link" class="socialIcons"></a></li>
+            </ul>
+            <p class="copyRightText">&copy; <time id="year"></time> Okechukwu</p>
+        </footer>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick = function() {
+           menuToggle.classList.toggle('active');
+           navigation.classList.toggle('active');
+           sec.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
